@@ -1,0 +1,23 @@
+.nav {
+    background-image: url("../images/debonairs.jpeg");
+    height: 200px;
+    display: block;
+    position: sticky;
+    top:0;
+  }
+
+  .nav ul li {
+    margin: 10px;
+    padding: 0px;
+    float: right;
+    list-style: none;
+    display: block;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+  
+  .nav a:hover {
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+  }
