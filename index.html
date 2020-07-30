@@ -86,7 +86,7 @@
             <p>
                <span> The best pizza you'll ever taste<br/>
 
-Order your pizza and we will deliver it to your location .</span>
+Order your pizza and we will deliver it to your doorstep .</span>
             </p>
                   <img src="images/pizza.jpg"width=300px"height="250">
           </div>
@@ -168,7 +168,27 @@ Order your pizza and we will deliver it to your location .</span>
                               <option value="150">Thick ---Ksh.150</option>
                             </select>
 
-
+                            <label for="toppings"> toppings:</label><br>
+                            <input type="checkbox" id="pepperoni" name="checks" value="150" onclick="getPepperoni();">Pepperoni--Ksh.&nbsp;150&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" id="mushrooms" name="checks" value="100" onclick="getMushroom();">Mushrooms--Ksh.&nbsp;100<br>
+                            <input type="checkbox" id="onions" name="checks" value="150" onclick="getOnions();">Onions--Ksh.&nbsp;150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" id="sausage" name="checks" value="100" onclick="getSausage();">Sausage--Ksh.&nbsp;&nbsp;100<br>
+                            <label for="many">Enter Number of pizza?</label>
+                            <select class="form-control" id="many" onchange="getNumber();" required>
+                                <option value="0">&nbsp;</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select><br>
+                            </div>
+                          </div>
 
 </body>
 
