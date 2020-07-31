@@ -26,7 +26,7 @@ body {
     padding: 10px 10px 10px 10px;
   }
   h1 {
-
+text-align: center;
    font-family: fantasy;
     font-size: 35px;
     font-weight: normal;
@@ -56,3 +56,69 @@ font-style: cursive;
 h3 {
     text-align: center;
 }
+
+#customerOrder{
+    display: none;
+  }
+  
+  #displayWell{
+    background-image: url(../images/p.jpg);
+    background-size: 100%;
+    color: white;
+    text-shadow: 5px 5px black;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  #leftCol{
+    background-color: green;
+    height: 100%;
+  }
+  
+  #rightCol{
+    background-color: red;
+    height: 100%;
+  }
+  
+  #cancelButton{
+    float: right;
+    margin-top: 20px;
+    padding: 20px 40px 20px 40px;
+  }
+  
+  #orderButton{
+    margin-top: 20px;
+    padding: 20px 40px 20px 40px;
+  }
+  
+  
+
+  .well{
+    background-color:white;
+    padding: 30px;
+    border-radius: 30px;
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  .orderTitle{
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  body{
+    background-image: url(../images/);
+    background-size: auto;
+  }
+  
+  ul{
+    list-style: none;
+    font-size: 3em;
+    text-align: center;
+  }
+  label{
+    font-size: 2em;
+    font-family: times;
+    font-family: 'Comfortaa', cursive;
+  }
+  #contact {
+    background-image: url(../images/p1.jpg);

@@ -32,13 +32,13 @@
 
           <li><a href="#contact">Contact</a></li>
 
-          <li><a href="#order">Order</a></li>
+          <li><a href="#pizzaOrder">Order</a></li>
 
           <li><a href="#menu">Menu</a></li>
 
           <li><a href="#about">About</a></li>
 
-          <li><a href="#home">Home</a></li>
+          <li><a href="#col-md-6">Home</a></li>
 
           </ul>
 
@@ -53,7 +53,7 @@
 
           </div>
 
-          <div class="col-md-6">
+          <div id="col-md-6">
       
             <h1>Debonairs Pizza Place and Lounge</h1>
         
@@ -140,96 +140,222 @@ Order your pizza and we will deliver it to your doorstep .</span>
               </div>
 
               <hr>
-              <div id="order">
-                <h1 id="name">DEBONAIRS-PIZZA ORDER FORM HERE!</h1>
-                <div class="fourteen1">
-                  <div class="container">
-                    <p class="four1">ORDER YOUR PIZZA PAP!!</p>
-                    <form id="choice">
-                      <div class="form-group selection">
-                        <div id="choices">
-                          <div class="form-group">
-                            <label for="pizzaSize">Choose the size:</label>
-                            <select class="form-control" id="pizzaSize" onchange="getSizeValue();">
-                              <option value="0">&nbsp;</option>
-                              <option value="600">Small -- Ksh. 600</option>
-                              <option value="800">Medium -- Ksh. 800</option>
-                              <option value="1200">Large -- Ksh. 1200</option>
-                            </select>
-                            <label for="crust">Chooose the crust:</label>
-                            <select class="form-control" id="crust" onchange="getCrust();" required>
-                              <option value="0">&nbsp;</option>
-                              <option value="200">Cripsy---Ksh.200</option>
-                              <option value="100">Stuffed---Ksh.100</option>
-                              <option value="100">Glutten---Ksh100</option>
-                              <option value="100">Fried ---Ksh.100</option>
-                              <option value="150">Thin ---Ksh.150</option>
-                              <option value="200">Deep ---Ksh.200</option>
-                              <option value="150">Thick ---Ksh.150</option>
-                            </select>
+              
+              
+                </div>
 
-                            <label for="toppings"> toppings:</label><br>
-                            <input type="checkbox" id="pepperoni" name="checks" value="150" onclick="getPepperoni();">Pepperoni--Ksh.&nbsp;150&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="checkbox" id="mushrooms" name="checks" value="100" onclick="getMushroom();">Mushrooms--Ksh.&nbsp;100<br>
-                            <input type="checkbox" id="onions" name="checks" value="150" onclick="getOnions();">Onions--Ksh.&nbsp;150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="checkbox" id="sausage" name="checks" value="100" onclick="getSausage();">Sausage--Ksh.&nbsp;&nbsp;100<br>
-                            <label for="many">Enter Number of pizza?</label>
-                            <select class="form-control" id="many" onchange="getNumber();" required>
-                                <option value="0">&nbsp;</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                              </select><br>
-                            </div>
-                          </div>
+              <div class="row">
 
-                          <div id="location">
-                            <div class="form-group">
-                              <label for="location">Choose the location of delivery:</label>
-                              <select class="form-control" id="delivery" onchange="getLocation();">
-                                <option value="0">&nbsp;</option>
-                                <option value="100">Nairobi CBD--Ksh.100</option>
-                                <option value="200">Thika road -- Ksh.200</option>
-                                <option value="300">Rongai--Ksh.300</option>
-                                <option value="200">Ngong road--Ksh. 300</option>
-                                <option value="100">Mombasa road--Ksh.300</option>
-                                <option value="200">Kibra--Ksh.200</option>
-                                <option value="300">Kikuyu--Ksh.300</option>
-                                <option value="100">Westlands--Ksh.100</option>
-                                <option value="200">Eastleigh--Ksh.200</option>
-                                <option value="300">Kamkunji--Ksh.300</option>
-                                <option value="300">Embakasi--Ksh.300</option>
-                                <option value="200">Dagoreti--Ksh.200</option>
-                                <option value="100">Mathare--Ksh.100</option>
-                                <option value="100">Pumwani--Ksh.100</option>
-                                <option value="200">Nairobi West--Ksh.200</option>
-                                <option value="200">South C--Ksh.200</option>
-                                <option value="200">South B--Ksh.200</option>
-                              </select>
-                            </div>
-                          </div>
-                          <span class="btn btn-primary cancel" onclick="document.location.reload(true)">Cancel</span>
-            <span class="btn btn-primary text-right" id="Checkout" onclick="getTotalAmount(); clearFields();">Checkout</span>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="fourteen2">
-        <div class="container">
-            <p>Your total /Bill is:</p>
-            <p id="fourteen3"></p>
-            <button class="btn btn-success" id="fourteen3button" onclick="document.location.reload(true)">Thankyou for shoping with Debonairs Pizza Place and Lounge</button>
-          </div>
-        </div>
-      </div>
-      <hr>
+                <div class="col-md-3">
+
+                  <div class="well" id="leftCol">
+
+                  </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                  <div class="well">
+
+                    <div class = "form-group">
+
+                      <form id= "pizzaOrder">
+
+                        <h1>Order your Pizza From Here!</h1>
+
+                        <label for="size">Choose Your Size of Pizza:</label>
+
+                        <select class="form-control" id="size">
+
+                          <option value= 600>Small: Ksh.600</option>
+
+                          <option value= 800>Medium: Ksh.800</option>
+
+                          <option value= 1200>Large: Ksh.1200</option>
+
+                          
+                        </select>
+
+                        <label for="toppings1">Choose Your First Topping:</label>
+
+                        <select class="form-control" id="toppings1">
+
+                          <option value= 0>Plain (Just Cheese and sauce)</option>
+
+                          <option value= 150>Pepperoni (+Ksh150)</option>
+
+                          <option value= 100>Sausage (+Ksh100)</option>
+
+                          <option value= 150>Capicola (+Ksh150)</option>
+
+                          <option value= 250>Anchovies (+Ksh250)</option>
+
+                          <option value= 150>Mushrooms (+Ksh150)</option>
+
+                          <option value= 150>Onions (+150)</option>
+
+                          <option value= 150>Green Peppers (+150)</option>
+
+                          <option value= 150>Arugula (+150)</option>
+
+                          <option value= 150>Green Olives (+150)</option>
+
+                        </select>
+
+                        <label for="toppings2">Second Topping:</label>
+
+                        <select class="form-control" id="toppings2">
+
+                          <option value= 0>none</option>
+
+                          <option value= 200>Pepperoni (+Ksh200)</option>
+
+                          <option value= 200>Sausage (+Ksh200)</option>
+
+                          <option value= 250>Capicola (+Ksh250)</option>
+
+                          <option value= 250>Anchovies (+Ksh250)</option>
+
+                          <option value= 150>Mushrooms (+150)</option>
+
+                          <option value= 150>Onions (+150)</option>
+
+                          <option value= 150>Green Peppers (+150)</option>
+
+                          <option value= 150>Arugula (+150)</option>
+
+                          <option value= 150>Green Olives (+150)</option>
+
+                        </select>
+
+                        <label for="toppings3">Third Topping:</label>
+
+                        <select class="form-control" id="toppings3">
+
+                          <option value= 0>none</option>
+
+                          <option value= 200>Pepperoni (+Ksh200)</option>
+
+                          <option value= 200>Sausage (+Ksh200)</option>
+
+                          <option value= 250>Capicola (+Ksh250)</option>
+
+                          <option value= 250>Anchovies (+Ksh250)</option>
+
+                          <option value= 150>Mushrooms (+150)</option>
+
+                          <option value= 150>Onions (+150)</option>
+
+                          <option value= 150>Green Peppers (+150)</option>
+
+                          <option value= 150>Arugula (+150)</option>
+
+                          <option value= 150>Green Olives (+150)</option>
+
+                        </select>
+
+                        <label for="toppings4">Fourth Topping:</label>
+
+                        <select class="form-control" id="toppings4">
+
+                          <option value= 0>none</option>
+
+                          <option value= 200>Pepperoni (+Ksh200)</option>
+
+                          <option value= 200>Sausage (+Ksh200)</option>
+
+                          <option value= 250>Capicola (+Ksh250)</option>
+
+                          <option value= 250>Anchovies (+Ksh250)</option>
+
+                          <option value= 150>Mushrooms (+150)</option>
+
+                          <option value= 150>Onions (+150)</option>
+
+                          <option value= 150>Green Peppers (+150)</option>
+
+                          <option value= 150>Arugula (+150)</option>
+
+                          <option value= 150>Green Olives (+150)</option>
+
+                        </select>
+
+                        <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
+
+                        <button type="button" class="btn btn-danger" value="Refresh Page" onClick="window.location.reload()" id="cancelButton">Cancel</button>
+
+                      </form>
+
+                    </div>
+
+                  </div>
+                
+              </div>
+
+                <div class="col-md-3">
+
+                  <div class="well" id="rightCol">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div id="customerOrder">
+
+                <div class="well" id="displayWell">
+                  <h1 class="orderTitle">Your Pizza Total:</h1>
+                    <ul>
+        
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="contact">
+              
+              <h1 class="text-white text-center"> Call Us </h1>
+              
+              <h1 class="text-center">+254 7979 85524</h1>
+
+              <h1 class="text-white text-center"> Subscribe </h1>
+
+                <form class="contact-form" action="https://formspree.io/xzbjyjwp" method="post">
+                
+                <div class="row myform">
+                
+                
+                <div class="col-md-12 input">
+                
+                <form id="form">
+                
+                  <div class="row">
+                
+                 <div class="col-md-2 form"></div>
+                
+                 <input class="col-md-4 form-control name" type="text" id="name" name="name" placeholder="Name..."required><br><br>
+                
+                <input class="col-md-4 form-control email" type="email" id="email" name="email" placeholder="Email..."required>
+                
+                <div class="col-md-2">
+                
+                    </div>
+                
+                   </div>
+                
+                  
+                
+                <div class="col-md-2"></div>
+                
+                 </div>
+                
+                  <button class="btn btn-success mx-auto d-block submit" id="okButton" type="submit">Send</button>
+                
+                  <br>
+                
+                  </form>
 
 </body>
 
