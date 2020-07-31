@@ -36,8 +36,6 @@
 
           <li><a href="#menu">Menu</a></li>
 
-          <li><a href="#about">About</a></li>
-
           <li><a href="#col-md-6">Home</a></li>
 
           </ul>
@@ -107,7 +105,7 @@ Order your pizza and we will deliver it to your doorstep .</span>
 
                 <img src="images/small.jpg" alt="small" class="smal" width="200px" height="200px">
 
-                <h4 class="text1">Small</h4>
+                <h4 class="text1">Regular</h4>
 
                 <p class="text1">KSH 600</p>
 
@@ -144,180 +142,184 @@ Order your pizza and we will deliver it to your doorstep .</span>
               
                 </div>
 
-              <div class="row">
-
-                <div class="col-md-3">
-
-                  <div class="well" id="leftCol">
-
-                  </div>
-
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="well">
-
-                    <div class = "form-group">
-
-                      <form id= "pizzaOrder">
-
-                        <h1>Order your Pizza From Here!</h1>
-
-                        <label for="size">Choose Your Size of Pizza:</label>
-
-                        <select class="form-control" id="size">
-
-                          <option value= 600>Small: Ksh.600</option>
-
-                          <option value= 800>Medium: Ksh.800</option>
-
-                          <option value= 1200>Large: Ksh.1200</option>
-
-                          
-                        </select>
-
-                        <label for="toppings1">Choose Your First Topping:</label>
-
-                        <select class="form-control" id="toppings1">
-
-                          <option value= 0>Plain (Just Cheese and sauce)</option>
-
-                          <option value= 150>Pepperoni (+Ksh150)</option>
-
-                          <option value= 100>Sausage (+Ksh100)</option>
-
-                          <option value= 150>Capicola (+Ksh150)</option>
-
-                          <option value= 250>Anchovies (+Ksh250)</option>
-
-                          <option value= 150>Mushrooms (+Ksh150)</option>
-
-                          <option value= 150>Onions (+150)</option>
-
-                          <option value= 150>Green Peppers (+150)</option>
-
-                          <option value= 150>Arugula (+150)</option>
-
-                          <option value= 150>Green Olives (+150)</option>
-
-                        </select>
-
-                        <label for="toppings2">Second Topping:</label>
-
-                        <select class="form-control" id="toppings2">
-
-                          <option value= 0>none</option>
-
-                          <option value= 200>Pepperoni (+Ksh200)</option>
-
-                          <option value= 200>Sausage (+Ksh200)</option>
-
-                          <option value= 250>Capicola (+Ksh250)</option>
-
-                          <option value= 250>Anchovies (+Ksh250)</option>
-
-                          <option value= 150>Mushrooms (+150)</option>
-
-                          <option value= 150>Onions (+150)</option>
-
-                          <option value= 150>Green Peppers (+150)</option>
-
-                          <option value= 150>Arugula (+150)</option>
-
-                          <option value= 150>Green Olives (+150)</option>
-
-                        </select>
-
-                        <label for="toppings3">Third Topping:</label>
-
-                        <select class="form-control" id="toppings3">
-
-                          <option value= 0>none</option>
-
-                          <option value= 200>Pepperoni (+Ksh200)</option>
-
-                          <option value= 200>Sausage (+Ksh200)</option>
-
-                          <option value= 250>Capicola (+Ksh250)</option>
-
-                          <option value= 250>Anchovies (+Ksh250)</option>
-
-                          <option value= 150>Mushrooms (+150)</option>
-
-                          <option value= 150>Onions (+150)</option>
-
-                          <option value= 150>Green Peppers (+150)</option>
-
-                          <option value= 150>Arugula (+150)</option>
-
-                          <option value= 150>Green Olives (+150)</option>
-
-                        </select>
-
-                        <label for="toppings4">Fourth Topping:</label>
-
-                        <select class="form-control" id="toppings4">
-
-                          <option value= 0>none</option>
-
-                          <option value= 200>Pepperoni (+Ksh200)</option>
-
-                          <option value= 200>Sausage (+Ksh200)</option>
-
-                          <option value= 250>Capicola (+Ksh250)</option>
-
-                          <option value= 250>Anchovies (+Ksh250)</option>
-
-                          <option value= 150>Mushrooms (+150)</option>
-
-                          <option value= 150>Onions (+150)</option>
-
-                          <option value= 150>Green Peppers (+150)</option>
-
-                          <option value= 150>Arugula (+150)</option>
-
-                          <option value= 150>Green Olives (+150)</option>
-
-                        </select>
-
-                        <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
-
-                        <button type="button" class="btn btn-danger" value="Refresh Page" onClick="window.location.reload()" id="cancelButton">Cancel</button>
-
-                      </form>
-
-                    </div>
-
-                  </div>
                 
-              </div>
+                
+                
 
-                <div class="col-md-3">
+                
+                
+                <div class="orders" id="order">
 
-                  <div class="well" id="rightCol">
+                  <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+
+                  <div class="form-group row">
+
+                      <div class="col-sm-2"></div>
+
+                      <div class="col-sm-8 order-overlay text-center">
+
+                          <form class="col-sm-6 offset-sm-3 text-center">
+
+                              <label>Pick your pizza Flavour:</label>
+
+                              <select class="custom-select custom-select-md mb-3 flavour" required>
+
+                                  <option value="vegtikka">Veg Tikka</option>
+
+                                  <option value="chickentikka">Chicken Tikka</option>
+
+                                  <option value="periperi">Peri-Peri Chicken</option>
+
+                                  <option value="bbq">BBQ Steak</option>
+
+                                  <option value="boerewors">Boerewors</option>
+
+                                  <option value="hawaiian">Hawaiian</option>
+
+                                  <option value="mushroom">Chicken and Mushroom</option>
+
+                                  <option value="regina">Regina Pizza</option>
+
+                              </select>
+
+                              <label>Chose your preferred Size:</label>
+
+                              <select class="custom-select custom-select-md mb-3" id="size" required>
+
+                                  <option value="regular">Regular</option>
+
+                                  <option value="medium">Medium</option>
+
+                                  <option value="large">Large</option>
+
+                              </select>
+
+                              <label for="crust">Choose your favorite Crust:</label>
+
+                              <select class="custom-select custom-select-md mb-3" id="crust" required>
+
+                                  <option value="thin">Thin Crust @ Ksh. 100</option>
+
+                                  <option value="thick">Thick Crust @ Ksh. 150</option>
+
+                                  <option value="flatbread">FlatBread Crust @ sh. 180</option>
+
+                                  <option value="custom">Custom Crust @ sh. 280</option>
+
+                              </select>
+
+                              <label>Select Your favourite Toppings</label>
+
+                              <select class="custom-select custom-select-md mb-3" id="toppings" required>
+
+                                  <option value="tomato">Tomato @ sh. 80</option>
+
+                                  <option value="onions">Onions @ sh. 80</option>
+
+                                  <option value="mushroom">Mushroom @ sh. 80</option>
+
+                                  <option value="greenpepper">Green Pepper @ sh. 80</option>
+
+                                  <option value=""></option>
+
+                                  <option value="olives">Olives @ sh. 120</option>
+
+                                  <option value="pineapple">Pineapple @ sh. 120</option>
+
+                                  <option value="sweetcorn">Sweet Corn @ sh. 120</option>
+
+                                  <option value="macon">Macon @ sh. 120</option>
+
+                                  <option value="mince">Mince @ sh. 120</option>
+
+                                  <option value=""></option>
+
+                                  <option value="beef">Beef Peperoni @ sh. 170</option>
+
+                                  <option value="chicken">Periperi Chicken @ sh. 170</option>
+
+                              </select>
+
+                              <label for="number">Number of Pizza's</label>
+
+                              <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+
+              
+              
+                          </form>
+
+                          <a href="#summary">
+
+                              <button type="submit" class="btn btn-success checkout" id="checkout">
+
+                                  Checkout
+
+                              </button>
+
+                          </a>
+
+              
+                      </div>
+
+                      <div class="col-sm-2"></div>
 
                   </div>
 
-                </div>
-
               </div>
+              
+              <div class="order-summary" id="sum-order">
 
-              <div id="customerOrder">
+                  <h1 class="text-center" id="summary">Order Summary</h1>
 
-                <div class="well" id="displayWell">
-                  <h1 class="orderTitle">Your Pizza Total:</h1>
-                    <ul>
+                  <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+
+                  <ol id="list" class="text-center sum">
+
+                  </ol>
+              
+              
+                  <div class="cdata-overlay">
+
+                      <div class="customerdata row">
+
+                          <div class="col-sm-3"></div>
+
+                          <form action="" class="form-group col-sm-6 data" id="data">
+
+                              <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:">
+
+                              <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number: ">
+
+                              <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: ">
+
+                              <button class="btn bg-info text-center d-block mx-auto go"  id="go" type="submit">Make Delivery</button>
+
+                          </form>
+              
+                          <div class="col-sm-3"></div>
+
+                      </div>
+
+                  </div>
+
+                  <div class="d-block mx-auto text-center">
+
+                      <button class='deliver'>Make Delivery</button>
+
+                      <button class='delivernot'>Pick Up</button>
+
+                  </div>
+                  
+              </div>
+                    
+                  
         
-                    </ul>
-                </div>
-              </div>
-            </div>
+                  
 
             <div id="contact">
               
               <h1 class="text-white text-center"> Call Us </h1>
-              
+
               <h1 class="text-center">+254 7979 85524</h1>
 
               <h1 class="text-white text-center"> Subscribe </h1>
