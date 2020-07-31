@@ -6,10 +6,10 @@ body {
     
     height: 200px;
     display: block;
-    position: sticky;
+    
     top:0;
     background-image: url(../images/bg1.jpeg);
-    background-image: inherit;
+    
   }
 
   .nav ul li {
