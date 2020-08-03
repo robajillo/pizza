@@ -3,13 +3,13 @@ body {
 }
 
 .nav {
-    
+
     height: 200px;
     display: block;
-    
+
     top:0;
     background-image: url(../images/concrete-surface-3964814.jpg);
-    
+
   }
 
   .nav ul li {
@@ -22,7 +22,7 @@ body {
     font-size: xx-large;
     font-weight: bolder;
   }
-  
+
   .nav a:hover {
     background-color: white;
     padding: 10px 10px 10px 10px;
@@ -36,9 +36,9 @@ body {
 text-align: center;
 font-family:  cursive;
     font-size: 35px;
-    
+
     color: deeppink;
-    
+
 }
 
 h2 {
@@ -50,14 +50,15 @@ font-style: cursive;
 }
 
  span {
-    
-    
+
+
     font-family: 'Shadows Into Light', cursive;
     font-size: 15pt;
     color: #20bcd5;
     text-align: center;
 
 
+}
 
 }
 h3 {
@@ -65,12 +66,12 @@ h3 {
     color:burlywood;
 }
 .container {
-  background-color: burlywood;
+background-color: burlywood;
   color: white;
 }
 
 
 #contact {
 
-  background-image: url(../images/p.jpg);
+  background-image: url(../images/p1.jpg);
 }

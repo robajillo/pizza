@@ -11,12 +11,12 @@ $(function () {
         let number = $("#number").val();
         console.log(size);
 
-        
+
         let order = (f, s, c, t, n, total) => {
             return {f, s, c, t, n, total};
         };
 
-        
+
         let price, totalPrice;
         switch (flavour) {
             case flavour = "vegtikka":
@@ -377,11 +377,11 @@ $(function () {
 
         }
 
-        
-        let newOrder = order(flavour, size, crust, topping, number, totalPrice);
-        console.log(newOrder); 
 
-        
+        let newOrder = order(flavour, size, crust, topping, number, totalPrice);
+        console.log(newOrder);
+
+
         $('.summary').slideDown(2000);
         $('.cdata-overlay').slideUp();
         $('#list').slideDown();
@@ -397,7 +397,7 @@ $(function () {
             + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
     });
 
-    
+
     $(".deliver").click(function () {
         $('.summary').slideUp();
         $('#list').slideUp();
@@ -408,17 +408,24 @@ $(function () {
     });
 
 
-    
+
     $(".delivernot").click(function () {
 
     });
 
-     
+
      $(function () {
         $.scrollify.move('#sum-order');
     });
+
     $("#go").click(function () {
+
         let location = $("input#location").val();
-        console.log(location);
+        let phone = $("input#phone").val()
+        let name = $("input#name").val();
+
+          alert ("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 300 Thank you for chosing Debonairs Pizza Place and Lounge.");
+
+
     });
 });
