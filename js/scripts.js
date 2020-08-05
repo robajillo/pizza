@@ -423,8 +423,13 @@ $(function () {
         let location = $("input#location").val();
         let phone = $("input#phone").val()
         let name = $("input#name").val();
+        
+        
+        
 
           alert ("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 300 Thank you for chosing Debonairs Pizza Place and Lounge.");
+
+
 
 
     });

@@ -79,3 +79,20 @@ background-color: burlywood;
 
   background-image: url(../images/p1.jpg);
 }
+@media only screen and (max-width: 1000px){
+  .row__content > #grid__column{
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px){
+  .row__content > #grid__column{
+       grid-template-columns: 1fr;
+  }
+  .banner__content > h2{
+      font-size: 25px;
+  }
+   .main-bar{
+       height: 10rem;
+   }
+}
